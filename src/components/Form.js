@@ -1,8 +1,4 @@
-import { useState } from "react"
-import PropTypes from 'prop-types'
-
 const Form = () => {
-    const [text, setText] = useState()
   return (
     <form className='add-form'>
         <div className='form-control'>
