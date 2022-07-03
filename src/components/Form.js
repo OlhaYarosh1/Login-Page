@@ -2,7 +2,8 @@ const Form = () => {
   return (
     <form className='add-form'>
         <div className='form-control'>
-            <input type='text' placeholder='Email address'/>
+            <input type='text' required/>
+              <label className='email' for=''>Email address</label>
         </div>
         <div className='form-control'>
             <input type='text' placeholder='Password'/>

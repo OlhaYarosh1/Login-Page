@@ -55,8 +55,29 @@ body {
   margin: 20px 0;
 }
 
+.form-control :focus~label {
+  top: 73px;
+  background-color: #fff;
+  color: #125bee;
+  font-size: 14px;
+}
+
+.form-control .emailSmaller {
+  font-size: 16px;
+}
+
 .form-control label {
   display: block;
+}
+
+.form-control .email {
+  display: block;
+  position: absolute;
+  top: 94px;
+  color: grey;
+  left: 90px;
+  transition: top .5s;
+  padding: 0 2px;
 }
 
 .form-control input {
