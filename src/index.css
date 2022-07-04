@@ -55,18 +55,21 @@ body {
   margin: 20px 0;
 }
 
-.form-control :focus~label {
+.form-control :focus~ .email {
   top: 73px;
   background-color: #fff;
   color: #125bee;
   font-size: 14px;
 }
 
-.form-control .emailSmaller {
-  font-size: 16px;
+.form-control :focus~ .password {
+  top: 145px;
+  background-color: #fff;
+  color: #125bee;
+  font-size: 14px;
 }
 
-.form-control label {
+.form-control .email {
   display: block;
 }
 
@@ -76,7 +79,19 @@ body {
   top: 94px;
   color: grey;
   left: 90px;
-  transition: top .5s;
+  transition: top 0.25s ease-in,
+  font-size 0.25s ease-in;
+  padding: 0 2px;
+}
+
+.form-control .password {
+  display: block;
+  position: absolute;
+  top: 164px;
+  color: grey;
+  left: 90px;
+  transition: top 0.25s ease-in,
+  font-size 0.25s ease-in;
   padding: 0 2px;
 }
 

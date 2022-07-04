@@ -2,11 +2,14 @@ const Form = () => {
   return (
     <form className='add-form'>
         <div className='form-control'>
-            <input type='text' required/>
-              <label className='email' for=''>Email address</label>
+          <div><input type='text' required/>
+            <div className='email' for=''>Email address</div>
+          </div>
         </div>
         <div className='form-control'>
-            <input type='text' placeholder='Password'/>
+          <div><input type='password' />
+            <div className='password' for=''>Password</div>
+          </div>
         </div>
         <div className='form-control form-control-check'>
             <input type='checkbox' />
