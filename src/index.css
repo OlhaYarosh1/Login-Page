@@ -56,7 +56,7 @@ body {
 }
 
 .form-control :focus~ .email {
-  top: 73px;
+  top: 74px;
   color: #125bee;
   font-size: 14px;
 }
@@ -68,15 +68,11 @@ body {
 }
 
 .form-control .email {
-  display: block;
-}
-
-.form-control .email {
-  display: block;
+  display: flex;
   position: absolute;
-  top: 94px;
+  top: 93px;
   color: grey;
-  left: 560px;
+  margin-left: 15px;
   transition: top 0.25s ease-in,
   font-size 0.25s ease-in;
   padding: 0 2px;
@@ -87,7 +83,7 @@ body {
   position: absolute;
   top: 164px;
   color: grey;
-  left: 560px;
+  margin-left: 15px;
   transition: top 0.25s ease-in,
   font-size 0.25s ease-in;
   padding: 0 2px;
@@ -100,10 +96,6 @@ body {
   padding: 3px 7px;
   font-size: 17px;
   border-radius: 4px;
-}
-
-.form-control .topEmail {
-
 }
 
 .form-control-check {
