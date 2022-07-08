@@ -52,7 +52,7 @@ body {
 }
 
 .form-control {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .grayBorder {
@@ -67,6 +67,22 @@ body {
   border-style: solid;
   border-width: 2px;
   z-index: 3;
+  background-color: transparent;
+}
+
+.grayBorderPass {
+  position: absolute;
+  width: 430px;
+  height: 40px;
+  margin: 5px;
+  margin-top: 70px;
+  padding: 3px 7px;
+  font-size: 17px;
+  border-radius: 4px;
+  border-color: #9d9d9d;
+  border-style: solid;
+  border-width: 2px;
+  z-index: 8;
   background-color: transparent;
 }
 
@@ -86,6 +102,23 @@ body {
   background-color: transparent;
 }
 
+.blueBorderPass {
+  position: absolute;
+  width: 430px;
+  height: 40px;
+  margin: 5px;
+  margin-top: 46px;
+  padding: 3px 7px;
+  font-size: 17px;
+  border-radius: 4px;
+  border-color: #125bee;
+  border-top: transparent;
+  border-style: solid;
+  border-width: 2px;
+  z-index: 7;
+  background-color: transparent;
+}
+
 .emailInputBottom {
   position: absolute;
   width: 420px;
@@ -96,6 +129,12 @@ body {
   border-color: transparent;
   background-color: transparent;
   font-size: 16px;
+}
+
+.passwordInputBottom {
+  width: 1px;
+  height: 1px;
+  border: none;
 }
 
 .emailInputTop {
@@ -110,10 +149,22 @@ body {
   font-size: 16px;
 }
 
+.passwordInputTop {
+  position: absolute;
+  width: 420px;
+  height: 37px;
+  margin-top: -2px;
+  margin-left: 3px;
+  z-index: 9;
+  border-color: transparent;
+  background-color: transparent;
+  font-size: 16px;
+}
+
 .placeholder {
   display: flex;
   position: absolute;
-  top: 93px;
+  top: 104px;
   color: grey;
   margin-left: 15px;
   transition: top 0.25s ease-in,
@@ -124,7 +175,26 @@ body {
   background-color: transparent;
 }
 
+.placeholderPass {
+  display: flex;
+  position: absolute;
+  top: 114px;
+  margin-top: 55px;
+  color: grey;
+  margin-left: 15px;
+  padding: 0 2px; 
+  user-select: none;
+  transition: top 0.25s ease-in,
+  font-size 0.25s ease-in;
+  z-index: 5;
+  background-color: transparent;
+}
+
 .emailInputBottom:focus {
+  outline: none;
+}
+
+.passwordInputBottom:focus {
   outline: none;
 }
 
@@ -132,22 +202,42 @@ body {
   outline: none;
 }
 
+.passwordInputTop:focus {
+  outline: none;
+}
+
 .grayBorder:focus-within {
   border-color: transparent;
   border: none;
   background: 
-   linear-gradient(#125bee , #125bee)top left/ 2% 1px,
-   linear-gradient(#125bee , #125bee)top right/ 73% 1px;
+   linear-gradient(#125bee , #125bee)top left/ 2% 1.5px,
+   linear-gradient(#125bee , #125bee)top right/ 73% 1.5px;
+   background-repeat: no-repeat;
+}
+
+.grayBorderPass:focus-within {
+  border-color: transparent;
+  border: none;
+  background: 
+   linear-gradient(#125bee , #125bee)top left/ 2% 1.5px,
+   linear-gradient(#125bee , #125bee)top right/ 80% 1.5px;
    background-repeat: no-repeat;
 }
 
 .grayBorder:focus-within~.placeholder{
-  top: 74px;
+  top: 84px;
+  color: #125bee;
+  font-size: 14px;
+}
+
+.grayBorderPass:focus-within~.placeholderPass{
+  top: 95px;
   color: #125bee;
   font-size: 14px;
 }
 
 .form-control-check {
+  margin-top: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
