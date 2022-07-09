@@ -1,15 +1,9 @@
 import React from 'react';
-import Form from './components/Form';
-import Footer from './components/Footer';
-import FooterForm from './components/FooterForm';
+import Container from './components/Container';
 
 function App() {
   return (
-    <div className='container'>
-      <Form />
-      <FooterForm/>
-      <Footer />
-    </div>
+    <Container/>
   );
 }
 

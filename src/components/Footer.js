@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-        <p>Not a member?&nbsp;
-            <a href='/'>Register</a>
-        </p>
+      <p>Not a member?&nbsp;
+        <a href='/'>Register</a>
+      </p>
     </footer>
   )
 }
