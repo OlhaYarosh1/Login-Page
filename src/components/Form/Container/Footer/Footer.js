@@ -1,8 +1,9 @@
 import React from 'react'
+import FooterCSS from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={FooterCSS.footer}>
       <p>Not a member?&nbsp;
         <a href='/'>Register</a>
       </p>
