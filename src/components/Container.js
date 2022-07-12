@@ -1,14 +1,13 @@
 import React from 'react'
 import FooterForm from './FooterForm'
-import Input from './Input'
-import InputForEmail from './InputForEmail'
 import Footer from './Footer'
+import Input from './Input/Input'
 
 const Container = () => {
   return (
     <div className='container'>
-      <InputForEmail/>
-      <Input/>
+      <Input title={'Email address'} type={'text'}/>
+      <Input title={'Password'} type={'password'} />
       <FooterForm/>
       <Footer/>
     </div>
