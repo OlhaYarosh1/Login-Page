@@ -1,9 +1,9 @@
 import React from 'react';
-import Container from './components/Container';
+import Form from './components/Form/Form';
 
 function App() {
   return (
-    <Container/>
+    <Form/>
   );
 }
 

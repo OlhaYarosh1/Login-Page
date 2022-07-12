@@ -1,14 +1,6 @@
 import React from 'react'
 
 const Input = ({title,type}) => {
-  const getInputType = () => {
-    switch (type) {
-        case 0:
-            type='password';
-        default: 
-            type='';
-    }
-}
   return (
     <div className='box'>
       <div className='grayBorder'>        

@@ -1,6 +1,6 @@
 import React from 'react'
-import FooterForm from './FooterForm'
-import Footer from './Footer'
+import FooterForm from './FooterForm/FooterForm'
+import Footer from './Footer/Footer'
 import Input from './Input/Input'
 
 const Container = () => {
