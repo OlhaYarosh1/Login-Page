@@ -1,14 +1,13 @@
 import React from 'react'
-import InputCSS from './Input.module.css'
+import classes from './Input.module.css'
 
 const Input = ({title,type}) => {
   return (
-    <div className={InputCSS.box}>
-      <div className={InputCSS.grayBorder}>        
-        <input className={InputCSS.input} type={type}></input>
-      </div>
-      <div className={InputCSS.blueBorder}></div>
-      <div className={InputCSS.placeholder}>{title}</div>
+    <div className={classes.box}>
+      <input className={classes.input} type={type} required></input>
+      <div className={classes.grayBorder}></div>
+      <div className={classes.blueBorder}></div>
+      <div className={classes.placeholder} >{title}</div>
     </div>
   )
 }
