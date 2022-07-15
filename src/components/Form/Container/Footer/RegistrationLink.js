@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './Footer.module.css'
+import classes from './RegistrationLink.module.css'
 
-const Footer = () => {
+const RegistrationLink = () => {
     return (
         <footer className={classes.footer}>
             <p>Not a member?&nbsp;
@@ -11,4 +11,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default RegistrationLink

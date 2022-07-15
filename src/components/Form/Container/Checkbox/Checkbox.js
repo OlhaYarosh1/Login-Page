@@ -1,7 +1,7 @@
 import React from 'react'
-import classes from './FooterForm.module.css'
+import classes from './Checkbox.module.css'
 
-const FooterForm = () => {
+const Checkbox = () => {
     return (
         <div>
             <div className={classes.formControlCheck}>
@@ -14,4 +14,4 @@ const FooterForm = () => {
     )
 }
 
-export default FooterForm
+export default Checkbox

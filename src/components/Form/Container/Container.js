@@ -1,6 +1,6 @@
 import React from 'react'
-import FooterForm from './FooterForm/FooterForm'
-import Footer from './Footer/Footer'
+import Checkbox from './Checkbox/Checkbox'
+import RegistrationLink from './Footer/RegistrationLink'
 import Input from './Input/Input'
 import classes from './Container.module.css'
 
@@ -9,8 +9,8 @@ const Container = () => {
         <div className={classes.container}>
             <Input title={'Email address'} type={'text'}/>
             <Input title={'Password'} type={'password'}/>
-            <FooterForm/>
-            <Footer/>
+            <Checkbox/>
+            <RegistrationLink/>
         </div>
     )
 }
