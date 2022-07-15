@@ -4,7 +4,7 @@ const Form = () => {
     return (
         <form className='add-form'>
             <div className='form-control'>
-                <Container/>    
+                <Container/>
             </div>
         </form>
     )
