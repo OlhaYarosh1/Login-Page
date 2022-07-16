@@ -7,8 +7,8 @@ import classes from './Container.module.css'
 const Container = () => {
     return (
         <div className={classes.container}>
-            <Input title={'Email address'} type={'text'} width={'200%'}/>
-            <Input title={'Password'} type={'password'}/>
+            <Input title={'Email address'} type={'text'} widthL={'8px'} widthR={'316px'}/>
+            <Input title={'Password'} type={'password'} widthL={'8px'} widthR={'348px'}/>
             <Checkbox/>
             <RegistrationLink/>
         </div>

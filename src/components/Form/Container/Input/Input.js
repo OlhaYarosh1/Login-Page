@@ -1,12 +1,13 @@
 import React from 'react'
 import classes from './Input.module.css'
 
-const Input = ({title, type, width}) => {
+const Input = ({title, type, widthL, widthR}) => {
+    const style = {"--width-left": widthL, "--width-right": widthR}
     return (
         <div className={classes.box}>
             <input className={classes.input} type={type} required></input>
-            <div className={classes.grayBorder} width={width}></div>
-            <div className={classes.blueBorder} width={width}></div>
+            <div className={classes.grayBorder} style={style}></div>
+            <div className={classes.blueBorder} style={style}></div>
             <div className={classes.placeholder}>{title}</div>
         </div>
     )
