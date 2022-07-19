@@ -16,3 +16,7 @@
 ### The model
 
 ![Login Page](docs/LoginPage.png)
+
+### The diagram
+
+![Diagram](docs/Diagram.png)
